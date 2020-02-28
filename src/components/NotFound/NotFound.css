@@ -1,0 +1,35 @@
+.not-found {
+  margin: 25px 0;
+}
+
+.not-found__title {
+  margin-top: 0;
+}
+
+.not-found__content {
+  font-size: 18px;
+}
+
+.not-found__text {
+  color: rgb(106, 115, 125);
+}
+
+.not-found__link {
+  transition: color 200ms;
+  text-decoration: none;
+
+  color: rgba(52, 152, 219, 0.8);
+}
+
+.not-found__link:hover,
+.not-found__link:focus {
+  color: rgb(52, 152, 219);
+}
+
+@media (max-width: 768px) {
+  .not-found__title {
+    margin-bottom: 10px;
+
+    font-size: 26px;
+  }
+}

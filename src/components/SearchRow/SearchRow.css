@@ -1,0 +1,132 @@
+.search-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 15px;
+}
+
+.search-row__input-block {
+  position: relative;
+
+  height: 30px;
+}
+
+.search-row__input-field {
+  box-sizing: border-box;
+  height: 100%;
+  padding-left: 30px;
+
+  transition: border 100ms;
+
+  border: 1px solid rgba(106, 115, 125, 0.5);
+  border-radius: 5px;
+}
+
+.search-row__input-field::placeholder {
+  color: rgba(106, 115, 125, 0.5);
+}
+
+.search-row__input-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5px;
+
+  width: 20px;
+  height: 20px;
+  margin: auto 0;
+
+  transition: fill 100ms;
+  pointer-events: none;
+
+  fill: rgba(106, 115, 125, 0.5);
+}
+
+.search-row__input-field:focus {
+  border: 1px solid rgb(52, 152, 219);
+}
+
+.search-row__input-field:focus + .search-row__input-icon {
+  fill: rgb(243, 156, 18);
+}
+
+.search-row__sort-block {
+  position: relative;
+}
+
+.search-row__sort-button {
+  width: 25px;
+  height: 25px;
+  padding: 0;
+
+  cursor: pointer;
+  transition: fill 100ms;
+
+  border: none;
+  background-color: transparent;
+
+  fill: rgba(106, 115, 125, 0.5);
+}
+
+.search-row__sort-button:hover,
+.search-row__sort-button:focus {
+  fill: rgb(52, 152, 219);
+}
+
+.search-row__sort-button:active {
+  fill: rgb(243, 156, 18);
+}
+
+.search-row__sort-popup {
+  position: absolute;
+  z-index: 1;
+  top: 25px;
+  right: 0;
+
+  visibility: hidden;
+  overflow: hidden;
+
+  height: 0;
+  padding: 0 5px;
+
+  transition: 200ms;
+
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.search-row__sort-popup--shown {
+  visibility: visible;
+
+  height: 102px;
+}
+
+.search-row__sort-popup-button {
+  display: block;
+
+  width: 100%;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+
+  cursor: pointer;
+  transition: color 100ms;
+  white-space: nowrap;
+
+  border: none;
+  background-color: transparent;
+
+  font-size: 14px;
+}
+
+.search-row__sort-popup-button:hover,
+.search-row__sort-popup-button:focus {
+  color: rgb(52, 152, 219);
+}
+
+.search-row__sort-popup-button--active {
+  color: rgb(243, 156, 18);
+}

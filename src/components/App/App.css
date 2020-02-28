@@ -1,0 +1,28 @@
+@import '../../assets/fonts/fonts.css';
+
+.app {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+.app__main {
+  flex: 1 0 auto;
+
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 10px 0;
+}
+
+@media (max-width: 420px) {
+  .app__main {
+    padding-top: 50px;
+  }
+}

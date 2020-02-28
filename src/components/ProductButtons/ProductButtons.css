@@ -1,0 +1,97 @@
+.product-buttons {
+  display: flex;
+  overflow: hidden;
+
+  width: 100%;
+  height: 40px;
+
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+
+  font-weight: bold;
+}
+
+.product-buttons__button-add {
+  width: 100%;
+
+  cursor: pointer;
+  transition: background-color 200ms;
+
+  color: inherit;
+  border: none;
+  background-color: rgb(52, 152, 219);
+
+  font-weight: inherit;
+}
+
+.product-buttons__button-add:hover,
+.product-buttons__button-add:focus {
+  background-color: rgb(45, 110, 154);
+}
+
+.product-buttons__goto-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 80%;
+
+  transition: background-color 200ms;
+  text-decoration: none;
+
+  color: inherit;
+  background-color: rgb(0, 188, 140);
+}
+
+.product-buttons__goto-cart:hover,
+.product-buttons__goto-cart:focus {
+  background-color: rgb(11, 134, 103);
+}
+
+.product-buttons__button-add-more {
+  width: 20%;
+
+  cursor: pointer;
+  transition: background-color 200ms;
+
+  color: inherit;
+  border: none;
+  background-color: rgb(52, 152, 219);
+
+  font-weight: inherit;
+}
+
+.product-buttons__button-add-more:hover,
+.product-buttons__button-add-more:focus {
+  background-color: rgb(45, 110, 154);
+}
+
+@media (max-width: 420px) {
+  .product-buttons {
+    height: 35px;
+
+    font-size: 14px;
+  }
+
+  .product-buttons__goto-cart {
+    width: 70%;
+  }
+
+  .product-buttons__button-add-more {
+    width: 30%;
+  }
+}
+
+@media (hover: none) {
+  .product-buttons__button-add:hover {
+    background-color: rgb(52, 152, 219);
+  }
+
+  .product-buttons__goto-cart:hover {
+    background-color: rgb(0, 188, 140);
+  }
+
+  .product-buttons__button-add-more:hover {
+    background-color: rgb(52, 152, 219);
+  }
+}

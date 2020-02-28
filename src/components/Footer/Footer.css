@@ -1,0 +1,29 @@
+.footer {
+  flex: 0 0 auto;
+
+  padding: 6px 0;
+
+  background-color: rgb(232, 240, 247);
+}
+
+.footer__content {
+  box-sizing: border-box;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.footer__copyright {
+  font-size: 10px;
+}
+
+.footer__link {
+  transition: color 200ms;
+  text-decoration: none;
+
+  color: rgb(243, 156, 18);
+}
+
+.footer__link:hover {
+  color: rgb(45, 110, 154);
+}
